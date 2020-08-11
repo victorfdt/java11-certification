@@ -6,7 +6,6 @@ public enum Seasons {
             return "Hot";
         }
 
-        @Override
         public String getMood() {
             return "It is great!";
         }
@@ -31,6 +30,7 @@ public enum Seasons {
 
     /**
      * All constructors from Enum as considered private. I don't need to place the modifier.
+     * The constructor is called only once at the first time the Enum is initialized.
      *
      * @param name
      */
@@ -44,8 +44,18 @@ public enum Seasons {
         return name;
     }
 
+    /**
+     * All enum values must implement this method.
+     *
+     * @return the feeling of the season.
+     */
     public abstract String getFeeling();
 
+    /**
+     * The implementation of this method is optinal.
+     *
+     * @return the mood fo the season.
+     */
     public String getMood() {
         return "Neutral";
     }

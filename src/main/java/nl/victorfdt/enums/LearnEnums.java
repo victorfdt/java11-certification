@@ -56,6 +56,5 @@ public class LearnEnums implements Exercise {
         Seasons winter = Seasons.WINTER;
 
         out.println(winter);
-
     }
 }
