@@ -1,6 +1,7 @@
 package nl.victorfdt;
 
 import nl.victorfdt.enums.LearnEnums;
+import nl.victorfdt.nestedclasses.AnotherBuilding;
 import nl.victorfdt.nestedclasses.Building;
 import nl.victorfdt.utils.Exercise;
 
@@ -10,7 +11,9 @@ public class App {
         //Exercise exercise = new LearnEnums();
 
         // Learn Nested Classes
-        Exercise exercise = new Building();
+        //Exercise exercise = new Building();
+        Exercise exercise = new AnotherBuilding();
+
         exercise.execute();
     }
 }
