@@ -1,5 +1,6 @@
 package nl.victorfdt;
 
+import nl.victorfdt.anonymouslocalclass.AnonymousClass;
 import nl.victorfdt.enums.LearnEnums;
 import nl.victorfdt.localclasses.MyClassWithLocalClass;
 import nl.victorfdt.nestedclasses.AnotherBuilding;
@@ -14,15 +15,17 @@ public class App {
         // Exercise exercise = new LearnEnums();
 
         // Learn Nested Classes
-        //Exercise exercise = new Building();
+        // Exercise exercise = new Building();
 
         // Learn Static Nested Classes
-        //Exercise exercise = new Boat();
-        //Exercise exercise = new MyBoatHelper();
+        // Exercise exercise = new Boat();
+        // Exercise exercise = new MyBoatHelper();
 
         // Learn local class
-        Exercise exercise = new MyClassWithLocalClass();
+        // Exercise exercise = new MyClassWithLocalClass();
 
+        // Learn Anonymous class
+        Exercise exercise = new AnonymousClass();
         exercise.execute();
     }
 }
