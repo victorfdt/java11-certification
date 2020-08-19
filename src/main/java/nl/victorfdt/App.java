@@ -1,6 +1,7 @@
 package nl.victorfdt;
 
 import nl.victorfdt.enums.LearnEnums;
+import nl.victorfdt.localclasses.MyClassWithLocalClass;
 import nl.victorfdt.nestedclasses.AnotherBuilding;
 import nl.victorfdt.nestedclasses.Building;
 import nl.victorfdt.nestedstaticclasses.Boat;
@@ -17,7 +18,10 @@ public class App {
 
         // Learn Static Nested Classes
         //Exercise exercise = new Boat();
-        Exercise exercise = new MyBoatHelper();
+        //Exercise exercise = new MyBoatHelper();
+
+        // Learn local class
+        Exercise exercise = new MyClassWithLocalClass();
 
         exercise.execute();
     }
