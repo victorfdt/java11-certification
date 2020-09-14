@@ -20,8 +20,17 @@ public class Boat implements Exercise {
         System.out.println("Boat.nonStaticMethod");
     }
 
+    public void execute() {
+        // Instantiating the inner class. Since it is a static inner class,
+        // it is not necessary to use and instance of the outer class.
+        BoatHelper helper = new BoatHelper();
+        helper.execute();
+
+    }
+
     public static class BoatHelper implements Exercise {
 
+        private static int length;
         public void nonStaticMethod() {
             System.out.println("BoatHelper.nonStaticMethod");
         }
@@ -41,19 +50,15 @@ public class Boat implements Exercise {
             // ERROR:  It is not an static field
             // System.out.println("Boat.name = " + name);
 
+            System.out.println(Boat.length);
+
             // ERROR: It is not an static method
             // nonStaticMethod();
 
             // Calling methods from the outer class
             Boat.staticMethod();
+            Boat boat = new Boat();
+            boat.name = "boat";
         }
-    }
-
-    public void execute() {
-        // Instantiating the inner class. Since it is a static inner class,
-        // it is not necessary to use and instance of the outer class.
-        BoatHelper helper = new BoatHelper();
-        helper.execute();
-
     }
 }

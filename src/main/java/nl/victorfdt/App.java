@@ -1,15 +1,12 @@
 package nl.victorfdt;
 
 import nl.victorfdt.anonymouslocalclass.AnonymousClass;
-import nl.victorfdt.enums.LearnEnums;
-import nl.victorfdt.localclasses.MyClassWithLocalClass;
-import nl.victorfdt.nestedclasses.AnotherBuilding;
-import nl.victorfdt.nestedclasses.Building;
-import nl.victorfdt.nestedstaticclasses.Boat;
-import nl.victorfdt.nestedstaticclasses.MyBoatHelper;
+import nl.victorfdt.reviewquestions.chapter1question11.Question11;
+import nl.victorfdt.reviewquestions.chapter1question17.Hyena;
 import nl.victorfdt.utils.Exercise;
 
 public class App {
+
     public static void main(String[] args) {
         // Learn Enums
         // Exercise exercise = new LearnEnums();
@@ -25,7 +22,12 @@ public class App {
         // Exercise exercise = new MyClassWithLocalClass();
 
         // Learn Anonymous class
-        Exercise exercise = new AnonymousClass();
-        exercise.execute();
+        //Exercise exercise = new AnonymousClass();
+
+        // Chapter 1 Question 11
+        //Question11.Test exercise = new Question11().new Test();
+
+        // Chapter 1 Question 17
+       // Exercise exercise = new Hyena();
     }
 }

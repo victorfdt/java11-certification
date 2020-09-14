@@ -52,6 +52,10 @@ public class Building implements Exercise {
     public class BuildingHelper {
         private String janitorName;
         private String address;
+        // Inner classes are not allowed to have static variables, unless they are also final.
+        // private static int height;
+
+        private static final int height = 10;
 
         public BuildingHelper() {
             System.out.println("BuildingHelper constructor");
@@ -64,7 +68,7 @@ public class Building implements Exercise {
         }
 
         public void showInformation() {
-            System.out.println(String.format("Name: {}, Address: {}", Building.this.name, Building.this.address));
+            System.out.println(String.format("Name: {}, Address: {}", name, Building.this.address));
         }
     }
 }
