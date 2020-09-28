@@ -1,8 +1,11 @@
 package nl.victorfdt.annotations;
 
+import java.lang.annotation.Documented;
+
 import nl.victorfdt.utils.Exercise;
 
 public class LearnAnnotations implements Exercise {
+
 
     @Music(genres = {"Rock"})
     private String music1;
@@ -13,6 +16,9 @@ public class LearnAnnotations implements Exercise {
     @Music(genres = {"Jazz", "Reggae"})
     private String music3;
 
+    /**
+     * Method that executes the class.
+     * */
     public void execute() {
         Lion lion = new Lion();
 
