@@ -1,10 +1,6 @@
 package nl.victorfdt;
 
-import nl.victorfdt.anonymouslocalclass.AnonymousClass;
-import nl.victorfdt.methodreferences.LearnMethodReferences;
-import nl.victorfdt.reviewquestions.chapter1question11.Question11;
-import nl.victorfdt.reviewquestions.chapter1question17.Hyena;
-import nl.victorfdt.utils.Exercise;
+import nl.victorfdt.collectionInterfaces.LearnCollectionInterfaces;
 
 public class App {
 
@@ -31,7 +27,8 @@ public class App {
         // Chapter 1 Question 17
         // Exercise exercise = new Hyena();
 
-        LearnMethodReferences exercise = new LearnMethodReferences();
+        //LearnMethodReferences exercise = new LearnMethodReferences();
+        var exercise = new LearnCollectionInterfaces();
         exercise.execute();
     }
 }
