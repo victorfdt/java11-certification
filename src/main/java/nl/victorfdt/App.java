@@ -1,6 +1,7 @@
 package nl.victorfdt;
 
 import nl.victorfdt.anonymouslocalclass.AnonymousClass;
+import nl.victorfdt.generics.LearnGenerics;
 import nl.victorfdt.methodreferences.LearnMethodReferences;
 import nl.victorfdt.reviewquestions.chapter1question11.Question11;
 import nl.victorfdt.reviewquestions.chapter1question17.Hyena;
@@ -31,7 +32,7 @@ public class App {
         // Chapter 1 Question 17
         // Exercise exercise = new Hyena();
 
-        LearnMethodReferences exercise = new LearnMethodReferences();
+        Exercise exercise = new LearnGenerics();
         exercise.execute();
     }
 }
